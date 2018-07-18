@@ -1,0 +1,16 @@
+<div *ngIf="model">
+  <wm-window [model]="model" id="Form2" class="HelloWorld_Form2">
+    <ng-template let-model>
+      <div class="Form2">
+        <wm-label id="label3" tabindex="11" class="label3" [model]="model.label3">Login</wm-label>
+        <wm-panel id="panel1" class="panel1" [model]="model.panel1">
+          <wm-label id="label1" tabindex="5" class="label1" [model]="model.label1">Username</wm-label>
+          <wm-textbox id="textBox1" tabindex="3" class="textBox1" [model]="model.textBox1"></wm-textbox>
+          <wm-label id="label2" tabindex="8" class="label2" [model]="model.label2">Password</wm-label>
+          <wm-textbox id="textBox2" tabindex="5" class="textBox2" [model]="model.textBox2"></wm-textbox>
+          <wm-button id="button1" tabindex="2" class="button1" [model]="model.button1"></wm-button>
+        </wm-panel>
+      </div>
+    </ng-template>
+  </wm-window>
+</div>
