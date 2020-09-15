@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SoftwareSystemPageObjects SoftwareSystemName="HelloWorld" Platform="CSharp">
+  <project projectId="HelloWorld">
+    <pageobject id="HelloWorld.Form1" name="Form1" type="html" width="398px" height="143px" overflow="hidden">
+      <element name="System.Windows.Forms.Label" type="System.Windows.Forms.Label" varname="label1" text="My First Sample" width="auto" weight="bold" font-size="26.25px" left="12px" top="25px" height="auto" position="absolute" />
+      <element name="System.Windows.Forms.Button" type="System.Windows.Forms.Button" varname="button1" text="Click Me" font-size="14.25px" left="12px" top="78px" width="116px" height="50px" position="absolute" />
+    </pageobject>
+  </project>
+</SoftwareSystemPageObjects>
