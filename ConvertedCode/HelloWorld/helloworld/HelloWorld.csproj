@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <StartupObject>WebSite.Startup</StartupObject>
+        <AssemblyName>HelloWorld</AssemblyName>
+        <ProjectGuid>4d39aaaa-0d8c-4535-a7c0-fc5fb7e04a21</ProjectGuid>
+        <Deterministic>False</Deterministic>
+        <LangVersion>7.3</LangVersion>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Stubs\Stubs.csproj"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
+        <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+        <PackageReference Include="Microsoft.VisualBasic" Version="10.4.0-preview.18571.3" />
+        <PackageReference Include="Mobilize.Extensions.Logging.RollingFile" Version="2.1.1-rc0027" />
+        <PackageReference Include="Mobilize.Web.BundleBasic.All" Version="6.0.1-rc0273"/>
+        <PackageReference Include="Mobilize.Weaving.WebMapExtensions.All" Version="6.0.0"/>
+        <PackageReference Include="Mobilize.Weaving" Version="2.0.0"/>
+        <PackageReference Include="Mobilize.WebMap.CoreServices.All" Version="7.0.2"/>
+        <PackageReference Include="Mobilize.VBUC.Helpers.All" Version="8.2.1-rc0512"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Views\**\*.cshtml" />
+        <Content Include="Views\**\*.config" />
+        <Compile Remove="helloworld-angular\**" />
+        <Content Remove="helloworld-angular\**" />
+        <EmbeddedResource Remove="helloworld-angular\**" />
+        <None Remove="helloworld-angular\**" />
+		        <Compile Remove="..\Stubs\**" />
+		<Content Remove="..\Stubs\**" />
+		<EmbeddedResource Remove="..\Stubs\**" />
+		<None Remove="..\Stubs\**" />
+    </ItemGroup>
+</Project>
+
