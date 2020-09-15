@@ -1,0 +1,32 @@
+.HelloWorld_Form1 {
+    left: -1px;
+    top: -1px;
+}
+.HelloWorld_Form1 .Form1 {
+    width: 398px;
+    height: 143px;
+    overflow: hidden;
+}
+.HelloWorld_Form1 .label1 {
+    width: auto;
+    weight: bold;
+    font-size: 26.25px;
+    left: 12px;
+    top: 25px;
+    height: auto;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.HelloWorld_Form1 .button1 {
+    font-size: 14.25px;
+    left: 12px;
+    top: 78px;
+    width: 116px;
+    height: 50px;
+    position: absolute;
+    padding: 0px 0px 0px 0px;
+    display: table-cell;
+    vertical-align: middle;
+    display: table-cell;
+}
